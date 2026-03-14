@@ -1,7 +1,9 @@
+import ContentInner from "../components/ContentInner";
+
 export default function Home() {
     return(
-        <>
-        <h1>Home</h1>
-        </>
+        <ContentInner>
+            <h1>Home</h1>
+        </ContentInner>
     )
 }

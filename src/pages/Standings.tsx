@@ -1,7 +1,9 @@
+import ContentInner from "../components/ContentInner";
+
 export default function Standings() {
     return(
-        <div>
+        <ContentInner>
             <h1>Standings</h1>
-        </div>
+        </ContentInner>
     )
 }

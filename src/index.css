@@ -1,0 +1,41 @@
+:root{
+    --bg-primary: #1e1e1e;
+    --bg-secondary: #fff;
+    --bg-third:#ef0808;
+    --text-primary: #fff;
+    --text-secondary: #1e1e1e;
+    --text-third: #ef0808;
+    --fs-16: clamp(14px, 1.5vw, 16px);
+    --fs-18: clamp(16px, 1.5vw, 18px);
+    --fs-20: clamp(18px, 2vw, 20px);
+    --fs-22: clamp(20px, 2vw, 22px);
+    --fs-24: clamp(22px, 2vw, 24px);
+    --fs-30: clamp(28px, 3vw, 30px);
+    --fs-34: clamp(32px, 3vw, 34px);
+    --fs-45: clamp(40px, 3vw, 45px);
+}
+
+.light-theme {
+    --bg-primary: #fff;
+    --bg-secondary: #1e1e1e;
+    --bg-third: #ef0808;
+    --text-primary: #1e1e1e;
+    --text-secondary: #fff;
+    --text-third: #ef0808;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tektur', sans-serif;;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    color: var(--text-primary);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
