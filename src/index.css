@@ -5,6 +5,21 @@
     --text-primary: #fff;
     --text-secondary: #1e1e1e;
     --text-third: #ef0808;
+    --border-primary: #fff;
+
+    --mercedes: #6cd3bf;
+    --red_bull: #1e41ff;
+    --ferrari: #ef0808;
+    --mclaren: #ff8700;
+    --alpine: #0090ff;
+    --aston_martin: #006f62;
+    --haas: #b6babd;
+    --cadillac: #aaaaad;
+    --rb: #1e41ff;
+    --williams: #005aff;
+    --audi: #ff2d00;
+
+
     --fs-16: clamp(14px, 1.5vw, 16px);
     --fs-18: clamp(16px, 1.5vw, 18px);
     --fs-20: clamp(18px, 2vw, 20px);
@@ -22,6 +37,7 @@
     --text-primary: #1e1e1e;
     --text-secondary: #fff;
     --text-third: #ef0808;
+    --border-primary: #1e1e1e;
 }
 
 *{
@@ -31,8 +47,41 @@
     font-family: 'Tektur', sans-serif;;
 }
 
-p, h1, h2, h3, h4, h5, h6{
+p, h1, h2, h3, h4, h5, h6, span, strong, a{
     color: var(--text-primary);
+    &.mercedes{
+        color: var(--mercedes);
+    }
+    &.red_bull{
+        color: var(--red_bull);
+    }
+    &.ferrari{
+        color: var(--ferrari);
+    }
+    &.mclaren{
+        color: var(--mclaren);
+    }
+    &.alpine{
+        color: var(--alpine);
+    }
+    &.aston_martin{
+        color: var(--aston_martin);
+    }
+    &.haas{
+        color: var(--haas);
+    }
+    &.cadillac{
+        color: var(--cadillac);
+    }
+    &.rb{
+        color: var(--rb);
+    }
+    &.williams{
+        color: var(--williams);
+    }
+    &.audi{
+        color: var(--audi);
+    }
 }
 
 ul{

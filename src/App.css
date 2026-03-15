@@ -64,8 +64,6 @@ header{
 
 .content-outer{
     background-color: var(--bg-primary);
-    height: 100%;
-
 }
 
 .content-inner{
@@ -168,3 +166,45 @@ header{
     }
 }
 
+/* STANDINGS */
+
+.standings-container-inner{
+    display: flex;
+    gap: 20px;
+}
+
+.drivers-standings{
+    flex-basis: 48%;
+    & h2{
+        font-size: var(--fs-34);
+        margin-bottom: 20px;
+    }
+}
+
+.driver-standing-row{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--border-primary);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.constructor-standing-row{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--border-primary);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.constructors-standings{
+    flex-basis: 48%;
+    & h2{
+        font-size: var(--fs-34);
+        margin-bottom: 20px;
+    }
+}
