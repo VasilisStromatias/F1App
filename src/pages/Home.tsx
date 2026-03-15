@@ -9,6 +9,8 @@ export default function Home() {
     const { data , isLoading, error, isError} = useQuery({
         queryKey: ['races'],
         queryFn: getRaces,
+        staleTime: 1000 * 60 * 60, // 1 hour
+        gcTime: 1000 * 60 * 60, // 1 hour
     });
 
     const raceData = data?.MRData.RaceTable.Races;
