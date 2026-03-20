@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Standings from './pages/Standings'
 import DriversDetail from './pages/DriversDetail'
 import PageNotFound from './pages/PageNotFound'
+import RaceResult from './pages/RaceResult'
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
         {path: '/', element: <Home /> },
         {path: '/standings', element: <Standings /> },
         {path: '/driver/:driverId', element: <DriversDetail /> },
+        {path: '/race/:round/results', element: <RaceResult /> }
       ]
     }
   ])

@@ -64,6 +64,7 @@ header{
 
 .content-outer{
     background-color: var(--bg-primary);
+    min-height: 1080px;
 }
 
 .content-inner{
@@ -249,4 +250,23 @@ header{
         font-size: var(--fs-34);
         margin-bottom: 20px;
     }
+}
+
+/* RACE RESULT */
+
+.race-result-page{
+    & h1{
+        font-size: var(--fs-34);
+        margin-bottom: 30px;
+    }
+}
+
+.race-result-row{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--border-primary);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }

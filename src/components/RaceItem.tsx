@@ -3,6 +3,7 @@ import dayjs from 'dayjs';
 import {type RaceProps } from '../utils/interfaces';
 import RaceWeekend from './RaceWeekend';
 import { formatTime } from '../utils/helpers';
+import { Link } from 'react-router-dom';
 
 interface RaceItem{
     isEnded ?: boolean
@@ -45,6 +46,7 @@ export function RaceItem({isEnded, race, isNextRace} : RaceItem){
         weekendHasSprint = true;
     }
 
+
     return(
         <>
         {isNextRace && 
@@ -61,7 +63,17 @@ export function RaceItem({isEnded, race, isNextRace} : RaceItem){
             </div>
         
         }
-        {!isNextRace && 
+        {!isNextRace && isEnded &&
+            <Link to={`/race/${race.round}/results`} className={`race-item ${isEnded ? 'ended' : ''} ${weekendHasSprint ?   'sprint-weekend' : ''}`} key={race.round}>
+                <div className="race-date">
+                    <span>{dayjs(race.date).format('MMM D')}</span>
+                </div>
+                <strong>Round {race.round} - Click to see the results </strong>
+                <h2>{race.raceName}</h2>
+                <p>{race.Circuit.circuitName}</p>
+            </Link>
+        }
+        {!isNextRace && !isEnded &&
             <div className={`race-item ${isEnded ? 'ended' : ''} ${weekendHasSprint ?   'sprint-weekend' : ''}`} key={race.round}>
                 <div className="race-date">
                     <span>{dayjs(race.date).format('MMM D')}</span>

@@ -4,3 +4,8 @@
         if (!time) return '';
         return dayjs(`2000-01-01T${time}`).format('HH:mm');
     };
+
+    
+    export function convertToInt(input: string): number {
+        return parseInt(input, 10);
+    }

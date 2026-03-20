@@ -56,3 +56,19 @@ export interface ConstructorStandingProps {
         name: string
     }
 }
+
+export interface RaceResultProps {
+    position: string
+    Driver: {
+        givenName: string
+        familyName: string
+    }
+    Constructor: {
+        name: string
+        constructorId: string
+    }
+    Time?: {
+        time: string
+    }
+    status: string
+}
